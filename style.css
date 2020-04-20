@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+}
+.wrap {
+	height: 100vh;
+	background-color: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.figure {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border-radius: 50%;
+}
+.figure:hover .smile {
+	border-radius: 0;
+}
+
+.figure:before {
+	content: '';
+
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 20px);
+}
+.figure:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 30px;
+	right: calc(50% - 20px);
+}
+.smile {
+	width: 50px;
+	height: 50px;
+	border-bottom: 5px solid black;
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	border-radius: 25px;
+	transition: border-radius .3s ease;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid red;
+	position: absolute;
+	bottom: 100%;
+	left: 20px;
+}
+
+
+
+
+
+
+
+
+
